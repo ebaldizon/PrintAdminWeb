@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="PrintAdminWebApp.App.PrintAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PrintAdmin</title>
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/PrintAdminStyles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderDefaultMaster" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="PrintAdminWebApp.App.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <title>PrintAdmin</title>
+        <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="Styles/PrintAdminStyles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"/>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PrintAdmin</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
+            <li><a href="Ordenes.aspx">Ordenes</a></li>
+            <li><a href="Clientes.aspx">Clientes</a></li>
+            <li><a href="Facturacion.aspx">Facturación</a></li>
+            <li><a href="Usuarios.aspx">Usuarios</a></li>  
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Ayuda.aspx">Ayuda</a></li>
+            <li><a id="aSingUp" href="Default.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="Default.aspx"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    <div>
+
+    </div>
+    </form>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
